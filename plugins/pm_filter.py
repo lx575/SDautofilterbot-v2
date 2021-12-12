@@ -649,11 +649,11 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_{req}_{key}_{offset}"), InlineKeyboardButton('⚙ 𝗗𝗙𝗙 𝗨𝗣𝗗𝗔𝗧𝗘 ⚙', url='https://t.me/DFF_UPDATE')]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🗓 1/1",callback_data="pages")]
+            [InlineKeyboardButton(text="🗓 1/1",callback_data="pages"), InlineKeyboardButton('⚙ 𝗗𝗙𝗙 𝗨𝗣𝗗𝗔𝗧𝗘 ⚙', url='https://t.me/DFF_UPDATE')]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if IMDB else None
     if imdb:
