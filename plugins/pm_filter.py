@@ -98,7 +98,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📁{get_size(file.file_size)}📁 {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"{get_size(file.file_size)}📁 {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -441,9 +441,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖸𝗈𝗎𝗋 𝖬𝗈𝗏𝗂𝖾𝗌🔎', switch_inline_query_current_chat='')
             ],[
             InlineKeyboardButton('➡️ 𝖧𝖾𝗅𝗉', callback_data='help'),         
-            InlineKeyboardButton('🔺𝖠𝖻𝗈𝗎𝗍', callback_data='about')                              
-            ],[
-            InlineKeyboardButton('🔐 𝖢𝗅𝗈𝗌𝖾', callback_data='close_data')
+            InlineKeyboardButton('🔺𝖠𝖻𝗈𝗎𝗍', callback_data='about')                                                      
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -459,9 +457,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇', callback_data='coct'),
             InlineKeyboardButton('𝖤𝗑𝗍𝗋𝖺 𝖬𝗈𝖽𝗌', callback_data='extra')
             ],[
-            InlineKeyboardButton('👤 𝖠𝖣𝖬𝖨𝖭', url='https://t.me/CVBHJOI_BOT'),
+            InlineKeyboardButton('📹𝖨𝖬𝖣𝖻', callback_data='imdbrdx'),           
+            InlineKeyboardButton('🔺𝖠𝖻𝗈𝗎𝗍', callback_data='about')
             ],[
-            InlineKeyboardButton('🔮 𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats')
+            InlineKeyboardButton('🔮 𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats'),            
+            InlineKeyboardButton('𝖸𝗈𝗎𝗋 𝖰𝗎𝖾𝗋𝗒❓', callback_data='contect')
             ],[
             InlineKeyboardButton('🔙 𝖡𝖠𝖢𝖪', callback_data='start'),
             InlineKeyboardButton('🔐 𝖢𝗅𝗈𝗌𝖾', callback_data='close_data')
@@ -493,7 +493,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('👩‍🦯 Back', callback_data='about')
+            InlineKeyboardButton('📞 𝖡𝗈𝗍 𝖠𝖽𝗆𝗂𝗇', url='https://t.me/CVBHJOI_BOT')
+            ],[
+            InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
+            InlineKeyboardButton('🛠 𝖲𝗎𝗉𝗉𝗈𝗋𝗍', url='https://t.me/Hollywood_0980')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -511,7 +514,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.MANUELFILTER_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
-        )
+        )    
     elif query.data == "button":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='manuelfilter')
@@ -542,10 +545,36 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif query.data == "Imdbrdx":
+        buttons = [[            
+            InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
+            InlineKeyboardButton('🛠 𝖲𝗎𝗉𝗉𝗈𝗋𝗍', url='https://t.me/Hollywood_0980')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.IMDBRDX_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "contect":
+        buttons = [[
+            InlineKeyboardButton('📞 𝖡𝗈𝗍 𝖠𝖽𝗆𝗂𝗇', url='https://t.me/CVBHJOI_BOT')
+            ],[
+            InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
+            InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/DFF_UPDATE')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONTECT_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
     elif query.data == "extra":
         buttons = [[
+            InlineKeyboardButton('𝖠𝖽𝗆𝗂𝗇', callback_data='admin')
+            ],[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
-            InlineKeyboardButton('👮‍♂️ Admin', callback_data='admin')
+            InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/DFF_UPDATE')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -624,7 +653,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📁{get_size(file.file_size)}📁 {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"{get_size(file.file_size)}📁 {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -649,7 +678,7 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_{req}_{key}_{offset}"), InlineKeyboardButton('⚙ 𝗗𝗙𝗙 𝗨𝗣𝗗𝗔𝗧𝗘 ⚙', url='https://t.me/DFF_UPDATE')]
+            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
@@ -701,11 +730,13 @@ async def auto_filter(client, msg, spoll=False):
             logger.exception(e)
             await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
-        k = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))            
+        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+    if spoll:
         await asyncio.sleep(8)
         await k.delete()
         
-sync def advantage_spell_chok(msg):
+
+async def advantage_spell_chok(msg):
     query = re.sub(r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)", "", msg.text, flags=re.IGNORECASE) # plis contribute some common words 
     query = query.strip() + " movie"
     g_s = await search_gagala(query)
