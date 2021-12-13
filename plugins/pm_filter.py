@@ -653,7 +653,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🗓 1/1",callback_data="pages"), InlineKeyboardButton('⚙ 𝗗𝗙𝗙 𝗨𝗣𝗗𝗔𝗧𝗘 ⚙', url='https://t.me/DFF_UPDATE')]
+            [InlineKeyboardButton(text="🗓 1/1",callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if IMDB else None
     if imdb:
@@ -701,9 +701,8 @@ async def auto_filter(client, msg, spoll=False):
             logger.exception(e)
             await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
-        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-    if spoll:
-        k = await msg.reply("I couldn't find any movie in that name.")
+        k = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+    if spoll:        
         await asyncio.sleep(8)
         await k.delete()
         
