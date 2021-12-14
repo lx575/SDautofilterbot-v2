@@ -729,10 +729,10 @@ async def auto_filter(client, msg, spoll=False):
         except Exception as e:
             logger.exception(e)
             await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-         k = await msg.reply("I couldn't find anything related to that. Check your spelling")
-        await asyncio.sleep(3)
-        await k.delete()
-        return
+    else:
+        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+    if spoll:
+        await msg.message.delete(3)
                        
 
 async def advantage_spell_chok(msg):
