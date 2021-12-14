@@ -734,10 +734,9 @@ async def auto_filter(client, msg, spoll=False):
     if spoll:
         one_button = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍʏ Oᴡɴᴇʀ​ 😎", url="https://t.me/MH_Manager_04bot")]])
         k = await msg.reply_photo(photo="https://telegra.ph/file/90774d8c83299d11b2199.jpg", caption="<b>𝚂𝚘𝚛𝚛𝚢, 𝙽𝚘 𝙼𝚘𝚟𝚒𝚎𝚜/𝚂𝚎𝚛𝚒𝚎𝚜 𝚁𝚎𝚕𝚊𝚝𝚎𝚍 𝚝𝚘 𝚝𝚑𝚎 𝙶𝚒𝚟𝚎𝚗 𝚆𝚘𝚛𝚍 𝚆𝚊𝚜 𝙵𝚘𝚞𝚗𝚍​</b>\n\n<b>𝙿𝚘𝚜𝚜𝚒𝚋𝚕𝚎 𝙲𝚊𝚞𝚜𝚎𝚜 : 🤔</b>\n\n<b>🔷 Not Released Yet\n🔶 Incorrect Spelling\n🔷 Not Uploaded By Owner\n\n<b>Cᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍʏ Oᴡɴᴇʀ​ 👇</b>", reply_markup = one_button)
-        await asyncio.sleep(15)
+        await asyncio.sleep(3)
         await k.delete()
-        return               
-
+                       
 
 async def advantage_spell_chok(msg):
     query = re.sub(r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)", "", msg.text, flags=re.IGNORECASE) # plis contribute some common words 
