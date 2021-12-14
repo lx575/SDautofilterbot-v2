@@ -729,10 +729,10 @@ async def auto_filter(client, msg, spoll=False):
         except Exception as e:
             logger.exception(e)
             await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-    else:
-        k = await msg.reply_photo(photo="https://telegra.ph/file/90774d8c83299d11b2199.jpg", caption="<b>𝚂𝚘𝚛𝚛𝚢, 𝙽𝚘 𝙼𝚘𝚟𝚒𝚎𝚜/𝚂𝚎𝚛𝚒𝚎𝚜 𝚁𝚎𝚕𝚊𝚝𝚎𝚍 𝚝𝚘 𝚝𝚑𝚎 𝙶𝚒𝚟𝚎𝚗 𝚆𝚘𝚛𝚍 𝚆𝚊𝚜 𝙵𝚘𝚞𝚗𝚍​</b>\n\n<b>𝙿𝚘𝚜𝚜𝚒𝚋𝚕𝚎 𝙲𝚊𝚞𝚜𝚎𝚜 : 🤔</b>\n\n<b>🔷 Not Released Yet\n🔶 Incorrect Spelling\n🔷 Not Uploaded By Owner\n\n<b>Cᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍʏ Oᴡɴᴇʀ​ 👇</b>", reply_markup = one_button)
+         k = await msg.reply("I couldn't find anything related to that. Check your spelling")
         await asyncio.sleep(3)
         await k.delete()
+        return
                        
 
 async def advantage_spell_chok(msg):
