@@ -21,7 +21,7 @@ async def answer(bot, query):
                            switch_pm_parameter="subscribe")
         return
 
-    results = []
+    results = 
     if '|' in query.query:
         string, file_type = query.query.split('|', maxsplit=1)
         string = string.strip()
@@ -58,7 +58,7 @@ async def answer(bot, query):
                 reply_markup=reply_markup))
 
     if results:
-        switch_pm_text = f"{emoji.FILE_FOLDER} Results - {total}"
+        switch_pm_text = f"{emoji.FILE_FOLDER} Your Results - {total}"
         if string:
             switch_pm_text += f" for {string}"
         try:
