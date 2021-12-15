@@ -433,7 +433,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[                        
-            InlineKeyboardButton('𝖨𝖬𝖣𝖻 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌❓', callback_data='contect')
+            InlineKeyboardButton('𝖨𝖬𝖣𝖻 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌❓', callback_data='contectt')
             ],[
             InlineKeyboardButton('⚙ 𝖧𝖾𝗅𝗉', callback_data='help'),         
             InlineKeyboardButton('👤 𝖠𝖻𝗈𝗎𝗍 𝗆𝖾', callback_data='about')                                                      
@@ -545,6 +545,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.CONTECT_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "contectt":
+        buttons = [[                        
+            InlineKeyboardButton('🔙 𝖡𝖠𝖢𝖪', callback_data='help'),
+            InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/DFF_UPDATE')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CONTECTT_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
