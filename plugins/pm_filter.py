@@ -708,7 +708,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your query {search}"
+        cap = f"Here is what i found for your query: 📁 <code>{search}</code>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -721,7 +721,7 @@ async def auto_filter(client, msg, spoll=False):
             await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
         r = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))    
-        await asyncio.sleep(8)
+        await asyncio.sleep(120)
         await r.delete()
         return
         
