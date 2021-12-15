@@ -47,6 +47,7 @@ async def start(client, message):
             InlineKeyboardButton('➡️ 𝖧𝖾𝗅𝗉', callback_data='help'),
             InlineKeyboardButton('🔺𝖠𝖻𝗈𝗎𝗍', callback_data='about')
         ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
         await msg.reply("I couldn't find any movie in that name,                       
             reply_markup=reply_markup,
             parse_mode='html'
