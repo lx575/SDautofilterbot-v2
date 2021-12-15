@@ -18,7 +18,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+                InlineKeyboardButton('🤖 Updates', url='https://t.me/DFF_UPDATE')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -37,14 +37,9 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝖨𝖬𝖣𝖻 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 ❓', callback_data='contect')
             ],[
-            InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾', url='https://t.me/DFF_UPDATE'),
-            InlineKeyboardButton('⚙ 𝖲𝗎𝗉𝗉𝗈𝗋𝗍', url='https://t.me/Hollywood_0980')
-            ],[
-            InlineKeyboardButton('🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖸𝗈𝗎𝗋 𝖬𝗈𝗏𝗂𝖾𝗌🔎', switch_inline_query_current_chat='')
-            ],[
-            InlineKeyboardButton('➡️ 𝖧𝖾𝗅𝗉', callback_data='help'),
+            InlineKeyboardButton('⚙ 𝖧𝖾𝗅𝗉', callback_data='help'),         
             InlineKeyboardButton('🔺𝖠𝖻𝗈𝗎𝗍', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -79,14 +74,9 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝖨𝖬𝖣𝖻 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 ❓', callback_data='contect')
             ],[
-            InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾', url='https://t.me/DFF_UPDATE'),
-            InlineKeyboardButton('⚙ 𝖲𝗎𝗉𝗉𝗈𝗋𝗍', url='https://t.me/Hollywood_0980')
-            ],[
-            InlineKeyboardButton('🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖸𝗈𝗎𝗋 𝖬𝗈𝗏𝗂𝖾𝗌🔎', switch_inline_query_current_chat='')
-            ],[
-            InlineKeyboardButton('➡️ 𝖧𝖾𝗅𝗉', callback_data='help'),
+            InlineKeyboardButton('⚙ 𝖧𝖾𝗅𝗉', callback_data='help'),         
             InlineKeyboardButton('🔺𝖠𝖻𝗈𝗎𝗍', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
