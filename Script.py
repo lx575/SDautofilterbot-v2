@@ -8,12 +8,18 @@ MY NAME IS 𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳,
     HELP_TXT = """HEY {}
 <b> Here is The My Commands.</b>
 
-<b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>"""
+"""
     ABOUT_TXT = """<b>Here is about me</b>
 
-<b>© @DFF_UPDATE ⚔️</b>
 """
     CONTECT_TXT = """<b>IMDb Modules</b> 
+
+<b>Commands and Usage:</b>
+• /imdb  - <code>get the film information from IMDb source.</code>
+• /search  - <code>get the film information from various sources.</code>  
+
+     <b>© @DFF_UPDATE</b>"""
+    CONTECTT_TXT = """<b>IMDb Modules</b> 
 
 <b>Commands and Usage:</b>
 • /imdb  - <code>get the film information from IMDb source.</code>
@@ -51,7 +57,7 @@ MY NAME IS 𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳,
 3. Buttons should be properly parsed as markdown format
 
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/EvaMariaBot)</code>
+<code>[Button Text](buttonurl:https://t.me/DFF_IMDb_Bot)</code>
 
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
