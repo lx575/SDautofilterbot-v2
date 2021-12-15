@@ -678,12 +678,10 @@ async def auto_filter(client, msg, spoll=False):
             print(e)
             await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     else:
-        k = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(3)
-        await k.delete()
+        r = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        await asyncio.sleep(12)
+        await r.delete()
         return
-
-
 async def advantage_spell_chok(msg):
     query = re.sub(r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e)?(l)*(o)*|mal(ayalam)?|tamil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle)", "", msg.text) # plis contribute some common words 
     query = msg.text.strip() + "movie"
