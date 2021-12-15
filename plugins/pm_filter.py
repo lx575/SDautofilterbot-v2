@@ -432,13 +432,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
-        buttons = [[
-            InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
-            InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾', url='https://t.me/DFF_UPDATE'),
-            InlineKeyboardButton('⚙ 𝖲𝗎𝗉𝗉𝗈𝗋𝗍', url='https://t.me/Hollywood_0980')
-            ],[
-            InlineKeyboardButton('🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖸𝗈𝗎𝗋 𝖬𝗈𝗏𝗂𝖾𝗌🔎', switch_inline_query_current_chat='')
+        buttons = [[                        
+            InlineKeyboardButton('𝖨𝖬𝖣𝖻 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌❓', callback_data='contect')
             ],[
             InlineKeyboardButton('➡️ 𝖧𝖾𝗅𝗉', callback_data='help'),         
             InlineKeyboardButton('🔺𝖠𝖻𝗈𝗎𝗍', callback_data='about')                                                      
@@ -457,11 +452,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇', callback_data='coct'),
             InlineKeyboardButton('𝖤𝗑𝗍𝗋𝖺 𝖬𝗈𝖽𝗌', callback_data='extra')
             ],[
-            InlineKeyboardButton('📹𝖨𝖬𝖣𝖻', callback_data='imdbrdx'),           
+            InlineKeyboardButton('🔮 𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats'),           
             InlineKeyboardButton('🔺𝖠𝖻𝗈𝗎𝗍', callback_data='about')
-            ],[
-            InlineKeyboardButton('🔮 𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats'),            
-            InlineKeyboardButton('𝖸𝗈𝗎𝗋 𝖰𝗎𝖾𝗋𝗒❓', callback_data='contect')
+            ],[                        
+            InlineKeyboardButton('𝖨𝖬𝖣𝖻 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌❓', callback_data='contect')
             ],[
             InlineKeyboardButton('🔙 𝖡𝖠𝖢𝖪', callback_data='start'),
             InlineKeyboardButton('🔐 𝖢𝗅𝗈𝗌𝖾', callback_data='close_data')
@@ -492,11 +486,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data == "source":
-        buttons = [[
-            InlineKeyboardButton('📞 𝖡𝗈𝗍 𝖠𝖽𝗆𝗂𝗇', url='https://t.me/CVBHJOI_BOT')
-            ],[
+        buttons = [[                        
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
-            InlineKeyboardButton('🛠 𝖲𝗎𝗉𝗉𝗈𝗋𝗍', url='https://t.me/Hollywood_0980')
+            InlineKeyboardButton('👤 𝖡𝗈𝗍 𝖠𝖽𝗆𝗂𝗇', url='https://t.me/CVBHJOI_BOT')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -544,23 +536,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.CONNECTION_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
-        )
-    elif query.data == "imdbrdx":
-        buttons = [[            
-            InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
-            InlineKeyboardButton('🛠 𝖲𝗎𝗉𝗉𝗈𝗋𝗍', url='https://t.me/Hollywood_0980')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.IMDBRDX_TXT,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
+        )    
     elif query.data == "contect":
-        buttons = [[
-            InlineKeyboardButton('📞 𝖡𝗈𝗍 𝖠𝖽𝗆𝗂𝗇', url='https://t.me/CVBHJOI_BOT')
-            ],[
-            InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
+        buttons = [[                        
+            InlineKeyboardButton('🔙 𝖡𝖠𝖢𝖪', callback_data='start'),
             InlineKeyboardButton('🛠 𝖴𝗉𝖽𝖺𝗍𝖾𝗌', url='https://t.me/DFF_UPDATE')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
