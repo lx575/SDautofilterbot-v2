@@ -665,7 +665,8 @@ async def auto_filter(client, msg, spoll=False):
             url = imdb['url']
         )
     else:
-        cap = f"🤭 <STRONG>{search}</STRONG> 𝗨𝗣𝗟𝗢𝗔𝗗𝗘𝗗 𝗕𝗬 ♪ 🔥→→ @RYMOFFICIAL\n\n🔥 𝐍𝐨𝐭𝐞:♪→𝗜𝗳 𝗬𝗼𝘂 𝗗𝗼𝗻'𝘁 𝗞𝗻𝗼𝘄 𝗛𝗼𝘄 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗜𝘁 𝗧𝗵𝗲𝗻 𝗧𝘆𝗽𝗲 #How 𝗜𝗻 𝗧𝗵𝗲 𝗚𝗿𝗼𝘂𝗽\n\n⚙️ Nᴏᴛᴇ:→𝗧𝗵𝗶𝘀 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 𝗪𝗶𝗹𝗹 𝗕𝗲 𝗔𝘂𝘁𝗼-𝗗𝗲𝗹𝗲𝘁𝗲𝗱 𝗔𝗳𝘁𝗲𝗿 2 𝗠𝗶𝗻𝘂𝘁𝗲 𝗧𝗼 𝗔𝘃𝗼𝗶𝗱 𝗖𝗼𝗽𝘆𝗿𝗶𝗴𝗵𝘁 𝗜𝘀𝘀𝘂𝗲𝘀."
+        cap = f"<b>🎥 𝖳𝗂𝗍𝗅𝖾:</b> <a href={url}>{title} (<a href={url}/releaseinfo>{year})</a>\n<b>🎭 𝖦𝖾𝗇𝗋𝖾𝗌:</b> {genres}\n<b>🌟 𝖱𝖺𝗍𝗂𝗇𝗀:</b> <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)\n<b>🔊 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾𝗌:</b> <a <code>{languages}</code></a>\n<b>📀 𝖱𝗎𝗇𝖳𝗂𝗆𝖾:</b> {runtime} Minutes\n<b>**© {message.chat.title}**</b>"
+."
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
