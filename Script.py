@@ -9,37 +9,23 @@ MY NAME IS 𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳,
 <b> Here is The My Commands.</b>
 
 <b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>"""
-    ABOUT_TXT = """<b>💥 MY NAME:𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳
-<b>💥 CREATER:</b> <b>DFF_UPDATE</b>
-<b>💥 LIBRARY:</b> <code>PYROGRAM</code>
-<b>💥 LANGUAGE:</b> <code>PYTHON 𝟹</code>
-<b>💥 DATA BASE:</b> <code>MONGO DB</code>
-<b>💥 BOT SERVER:</b> <code>HEROKU</code>
-<b>💥 BUILD STATUS:</b> <code>v1.0.1 [ BETA ]</code></b>
+    ABOUT_TXT = """<b>Here is about me</b>
 
-<b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>
+<b>© @DFF_UPDATE ⚔️</b>
 """
-    CONTECT_TXT = """Help: <b>Bot Admin</b>
-
-<i>🖍 If you have any question ask here.</i>
-
-           <a href='https://t.me/CVBHJOI_BOT'>𝖠𝖽𝗆𝗂𝗇</a>"""
-    IMDBRDX_TXT = """<b>IMDB Modules</b> 
+    CONTECT_TXT = """<b>IMDb Modules</b> 
 
 <b>Commands and Usage:</b>
 • /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>
+• /search  - <code>get the film information from various sources.</code>  
 
-<b>⚠️ NOTE ⚠️</b>
-<i>IMDb feature is currently closed for PM.  It is only available for Chat (group) right now.</i>"""
+     <b>© @DFF_UPDATE</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 <b>how are you guys. any problem ? 😄</b>
 
 <i>- DFF IMDb BOT is a open source project. 
 - Source - If you want SOURCE CODE then talk to admin. 👍🏼</i>
-
       
-
 <b>Made With ❤ BY @DFF_UPDATE</b>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
@@ -57,7 +43,7 @@ MY NAME IS 𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳,
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
-- Eva Maria Supports both url and alert inline buttons.
+- 𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 Supports both url and alert inline buttons.
 
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
