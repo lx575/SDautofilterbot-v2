@@ -47,8 +47,7 @@ async def start(client, message):
             InlineKeyboardButton('➡️ 𝖧𝖾𝗅𝗉', callback_data='help'),
             InlineKeyboardButton('🔺𝖠𝖻𝗈𝗎𝗍', callback_data='about')
         ]]
-        await message.reply_RDX(            
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+        await msg.reply("I couldn't find any movie in that name,                       
             reply_markup=reply_markup,
             parse_mode='html'
         )
