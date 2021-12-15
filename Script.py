@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """<b>Hello</b> {}
-MY NAME IS <a href=https://t.me/{}>{}</a>, 
+MY NAME IS 𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳, 
 
 <i>Iam A Simple Auto Filter + Movie Search + Manual Filter Bot. I Can Provide Movies In Telegram Groups. You Can Search Movies Via Inline. I Can Also Add Filters In Telegram Groups.  Just Add Me To Your Group And Enjoy</i>
 
@@ -12,7 +12,7 @@ MY NAME IS <a href=https://t.me/{}>{}</a>,
 -> If you have any problem then connect to admin.
 
 <b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>"""
-    ABOUT_TXT = """<b>✯ MY NAME:</b> {}
+    ABOUT_TXT = """<b>✯ MY NAME:𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳
 <b>💥 CREATER:</b> <a href=https://t.me/DFF_UPDATE>DFF UPDATES</a>
 <b>💥 LIBRARY:</b> <code>PYROGRAM</code>
 <b>💥 LANGUAGE:</b> <code>PYTHON 𝟹</code>
