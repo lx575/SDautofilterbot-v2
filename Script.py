@@ -8,9 +8,6 @@ MY NAME IS 𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳,
     HELP_TXT = """HEY {}
 <b> Here is The My Commands.</b>
 
--> If you have 300000+ files and you want to add in this bot then contact admin.
--> If you have any problem then connect to admin.
-
 <b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>"""
     ABOUT_TXT = """<b>✯ MY NAME:𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳
 <b>💥 CREATER:</b> <a href=https://t.me/DFF_UPDATE>DFF UPDATES</a>
@@ -22,6 +19,19 @@ MY NAME IS 𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳,
 
 <b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>
 """
+    CONTECT_TXT = """Help: <b>Bot Admin</b>
+
+<i>🖍 If you have any question ask here.</i>
+
+           <a href='https://t.me/CVBHJOI_BOT'>𝖠𝖽𝗆𝗂𝗇</a>"""
+    IMDBRDX_TXT = """<b>IMDB Modules</b> 
+
+<b>Commands and Usage:</b>
+• /imdb  - <code>get the film information from IMDb source.</code>
+• /search  - <code>get the film information from various sources.</code>
+
+<b>⚠️ NOTE ⚠️</b>
+<i>IMDb feature is currently closed for PM.  It is only available for Chat (group) right now.</i>"""
     SOURCE_TXT = """<b>NOTE:</b>
 <b>how are you guys. any problem ? 😄</b>
 
@@ -86,9 +96,7 @@ these are the extra features of Eva Maria
 
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specifed user.</code>
-• /info  - <code>get information about a user.</code>
-• /imdb  - <code>get the film information from IMDb source.</code>
-• /search  - <code>get the film information from various sources.</code>"""
+• /info  - <code>get information about a user.</code>"""
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
