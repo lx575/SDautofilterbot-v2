@@ -205,8 +205,7 @@ async def imdb_callback(bot: Client, query: CallbackQuery):
             logger.exception(e)
             await query.message.reply(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
         await query.message.delete()
-    else:
-        await query.message.edit(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)    
+    , reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)    
         
 
         
