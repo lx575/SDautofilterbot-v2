@@ -666,7 +666,6 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         cap = f"<b>🎥 𝖳𝗂𝗍𝗅𝖾:</b> <a href={url}>{title} (<a href={url}/releaseinfo>{year})</a>\n<b>🎭 𝖦𝖾𝗇𝗋𝖾𝗌:</b> {genres}\n<b>🌟 𝖱𝖺𝗍𝗂𝗇𝗀:</b> <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)\n<b>🔊 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾𝗌:</b> <a <code>{languages}</code></a>\n<b>📀 𝖱𝗎𝗇𝖳𝗂𝗆𝖾:</b> {runtime} Minutes\n<b>**© {message.chat.title}**</b>"
-."
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
