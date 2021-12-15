@@ -2,14 +2,14 @@ class script(object):
     START_TXT = """<b>Hello</b> {}
 MY NAME IS 𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳, 
 
-<i>Iam A Simple Auto Filter + Movie Search + Manual Filter Bot. I Can Provide Movies In Telegram Groups. You Can Search Movies Via Inline. I Can Also Add Filters In Telegram Groups.  Just Add Me To Your Group And Enjoy</i>
+<i>I am a simple IMDb bot. I can give you IMDb data of any movie/series.</i>
 
 <b>Made With ❤ BY @DFF_UPDATE</b>"""
     HELP_TXT = """HEY {}
 <b> Here is The My Commands.</b>
 
 <b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>"""
-    ABOUT_TXT = """<b>✯ MY NAME:𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳
+    ABOUT_TXT = """<b>💥 MY NAME:𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳
 <b>💥 CREATER:</b> <b>DFF_UPDATE</b>
 <b>💥 LIBRARY:</b> <code>PYROGRAM</code>
 <b>💥 LANGUAGE:</b> <code>PYTHON 𝟹</code>
