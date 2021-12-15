@@ -10,7 +10,7 @@ MY NAME IS 𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳,
 
 <b>Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ: @DFF_UPDATE ⚔️</b>"""
     ABOUT_TXT = """<b>✯ MY NAME:𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳
-<b>💥 CREATER:</b> <a href=https://t.me/DFF_UPDATE>DFF UPDATES</a>
+<b>💥 CREATER:</b> <b>DFF_UPDATE</b>
 <b>💥 LIBRARY:</b> <code>PYROGRAM</code>
 <b>💥 LANGUAGE:</b> <code>PYTHON 𝟹</code>
 <b>💥 DATA BASE:</b> <code>MONGO DB</code>
@@ -38,7 +38,7 @@ MY NAME IS 𝖣𝖥𝖥 𝖨𝖬𝖣𝖻 𝖡𝗈𝖳,
 <i>- DFF IMDb BOT is a open source project. 
 - Source - If you want SOURCE CODE then talk to admin. 👍🏼</i>
 
-      <a href='https://t.me/CVBHJOI_BOT'>🇦 🇩 🇲 🇮 🇳</a>
+      
 
 <b>Made With ❤ BY @DFF_UPDATE</b>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
